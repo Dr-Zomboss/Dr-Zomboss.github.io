@@ -20,29 +20,37 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Timmy&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="本文简介 本文使用Hexo+Github在Windows上搭建博客，总结了自己常用的设置，以供大家参考。 文章参考：Hexo文档、NexT使用文档、Theme NexT。  环境准备 安装Node.js和git：Node.js 官网：https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn&#x2F;git 官网：https:&#x2F;&#x2F;git-scm.com&#x2F; 检查Node、npm和git版本号（git需在git bas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建Hexo博客 --Windows版本">
+<meta property="og:url" content="http://yoursite.com/2020/08/28/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%20--Windows%E7%89%88%E6%9C%AC/index.html">
 <meta property="og:site_name" content="Timmy&#39;s Blog">
+<meta property="og:description" content="本文简介 本文使用Hexo+Github在Windows上搭建博客，总结了自己常用的设置，以供大家参考。 文章参考：Hexo文档、NexT使用文档、Theme NexT。  环境准备 安装Node.js和git：Node.js 官网：https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn&#x2F;git 官网：https:&#x2F;&#x2F;git-scm.com&#x2F; 检查Node、npm和git版本号（git需在git bas">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s1.ax1x.com/2020/08/28/dI4ShD.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/08/28/dI499e.png">
+<meta property="article:published_time" content="2020-08-28T03:49:46.000Z">
+<meta property="article:modified_time" content="2020-08-28T07:24:35.000Z">
 <meta property="article:author" content="Timmy">
+<meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/08/28/dI4ShD.png">
 
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/08/28/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%20--Windows%E7%89%88%E6%9C%AC/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Timmy's Blog</title>
+  <title>搭建Hexo博客 --Windows版本 | Timmy's Blog</title>
   
 
 
@@ -158,7 +166,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -170,6 +178,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E6%96%87%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">本文简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%8D%9A%E5%AE%A2"><span class="nav-number">3.</span> <span class="nav-text">安装博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">个性化配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NexT"><span class="nav-number">5.</span> <span class="nav-text">NexT</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -234,11 +243,12 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
       
 
       
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -257,10 +267,9 @@
     
     
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/28/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2%20--Windows%E7%89%88%E6%9C%AC/" class="post-title-link" itemprop="url">搭建Hexo博客 --Windows版本</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          搭建Hexo博客 --Windows版本
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -293,7 +302,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="本文简介"><a href="#本文简介" class="headerlink" title="本文简介"></a>本文简介</h2><ul>
+        <h2 id="本文简介"><a href="#本文简介" class="headerlink" title="本文简介"></a>本文简介</h2><ul>
 <li>本文使用Hexo+Github在Windows上搭建博客，总结了自己常用的设置，以供大家参考。</li>
 <li>文章参考：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo文档</a>、<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">NexT使用文档</a>、<a target="_blank" rel="noopener" href="https://theme-next.js.org/">Theme NexT</a>。</li>
 </ul>
@@ -410,7 +419,6 @@
 </li>
 </ul>
 
-      
     </div>
 
     
@@ -418,15 +426,16 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-tags">
+              <a href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag"># 网络</a>
+          </div>
+
+        
+
     </footer>
   </article>
   
   
-  
-
-
   
 
 
