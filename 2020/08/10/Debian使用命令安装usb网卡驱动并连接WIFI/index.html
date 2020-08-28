@@ -20,18 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.5","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="Debian使用命令安装usb网卡驱动并连接WIFI">
+<meta property="og:url" content="http://yoursite.com/2020/08/10/Debian%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E5%AE%89%E8%A3%85usb%E7%BD%91%E5%8D%A1%E9%A9%B1%E5%8A%A8%E5%B9%B6%E8%BF%9E%E6%8E%A5WIFI/index.html">
 <meta property="og:site_name" content="Timmy&#39;s Blog">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-08-28T03:45:48.000Z">
-<meta property="article:modified_time" content="2020-08-28T03:46:23.673Z">
+<meta property="article:published_time" content="2020-08-10T02:08:15.000Z">
+<meta property="article:modified_time" content="2020-08-28T08:27:59.266Z">
 <meta property="article:author" content="Timmy">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://yoursite.com/tags/">
+<link rel="canonical" href="http://yoursite.com/2020/08/10/Debian%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E5%AE%89%E8%A3%85usb%E7%BD%91%E5%8D%A1%E9%A9%B1%E5%8A%A8%E5%B9%B6%E8%BF%9E%E6%8E%A5WIFI/">
 
 
 <script class="page-configurations">
@@ -39,13 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Tags | Timmy's Blog
-</title>
+  <title>Debian使用命令安装usb网卡驱动并连接WIFI | Timmy's Blog</title>
   
 
 
@@ -161,7 +162,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -173,6 +174,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8"><span class="nav-number">1.</span> <span class="nav-text">安装驱动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C"><span class="nav-number">2.</span> <span class="nav-text">连接网络</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -237,53 +239,147 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
       
-  
-  
 
       
 
     
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/10/Debian%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E5%AE%89%E8%A3%85usb%E7%BD%91%E5%8D%A1%E9%A9%B1%E5%8A%A8%E5%B9%B6%E8%BF%9E%E6%8E%A5WIFI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Timmy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Timmy's Blog">
+    </span>
+
     
     
-    <div class="post-block" lang="en">
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Debian使用命令安装usb网卡驱动并连接WIFI
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">Tags
-</h1>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-<div class="post-meta-container">
+      <time title="Created: 2020-08-10 10:08:15" itemprop="dateCreated datePublished" datetime="2020-08-10T10:08:15+08:00">2020-08-10</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2020-08-28 16:27:59" itemprop="dateModified" datetime="2020-08-28T16:27:59+08:00">2020-08-28</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Diary/" itemprop="url" rel="index"><span itemprop="name">Diary</span></a>
+        </span>
+    </span>
+
   
-
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      
-      <div class="post-body">
-          <div class="tag-cloud">
-  <div class="tag-cloud-title">
-    2 tags in total
-  </div>
-  <div class="tag-cloud-tags">
-    <a href="/tags/Linux/" style="font-size: 12px;" class="tag-cloud-0">Linux</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 30px;" class="tag-cloud-10">网络</a>
-  </div>
-</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <hr>
+<a id="more"></a>
+
+<h1 id="安装驱动"><a href="#安装驱动" class="headerlink" title="安装驱动"></a>安装驱动</h1><ol>
+<li><p>确认自己的网卡型号，在官网下载相应驱动。我的网卡型号为 comfast 811AC。</p>
+</li>
+<li><p>解压驱动包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip rtl8821</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入驱动包目录：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> rtl8821</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>给执行权限：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x install.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行脚本：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./install.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>载入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">modprobe 8821cu</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1 id="连接网络"><a href="#连接网络" class="headerlink" title="连接网络"></a>连接网络</h1><ol>
+<li><p>安装 wpa_supplicant：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aptitude install wpasupplicant</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑网络配置文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/network/interfaces</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在无线网卡的配置下面写入如下配置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wpa_ssid=<span class="string">&quot;ssid_name&quot;</span></span><br><span class="line">wpa_psk=<span class="string">&quot;password&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启网络服务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service network restart</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开无线网卡电源：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iwconfig</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>这种方式只适用于 DHCP 分配 IP 地址，若需要静态 IP，建议直接使用路由器分配。</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Linux/" rel="tag"># Linux</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag"># 网络</a>
+          </div>
 
         
-      </div>
-      
-      
-      
-    </div>
-    
 
-    
-    
-    
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/08/03/Debian%E4%BD%BF%E7%94%A8Clash%E5%AE%9E%E7%8E%B0%E5%B1%80%E5%9F%9F%E7%BD%91%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/" rel="prev" title="Debian使用Clash实现局域网透明代理">
+                  <i class="fa fa-chevron-left"></i> Debian使用Clash实现局域网透明代理
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/08/10/%E5%9B%BD%E5%86%85%E7%BD%91%E7%BB%9C%E8%BF%90%E8%90%A5%E5%95%86%E7%BA%BF%E8%B7%AF%E7%AE%80%E4%BB%8B/" rel="next" title="国内网络运营商线路简介">
+                  国内网络运营商线路简介 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+  
+  
+  
+
 
 
       
